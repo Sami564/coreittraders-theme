@@ -1,0 +1,142 @@
+.section-header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.call-link, .whatsapp-link{
+  border: 1px solid var(--white);
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+
+.call-link{
+  color: var(--white);
+}
+
+.whatsapp-link{
+  color: var(--black);
+  background-color: var(--white);
+  width: fit-content;
+}
+
+.util-icon{
+  width: 3rem;
+  margin: 1rem 0;
+}
+
+.split-box {
+  display: flex;
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.split-list {
+  flex: 1;
+}
+
+.split-item {
+  padding: 2rem;
+  font-weight: 400;
+  border-bottom: 1px solid var(--shadow);
+  letter-spacing: 1px;
+  font-family: var(--heading-font);
+}
+
+.split-panel {
+  flex: 1;
+  background: var(--blue);
+  color: var(--white);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.panel-icon {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.split-panel h3 {
+  font-size: 26px;
+  margin-bottom: 15px;
+  line-height: 1.3;
+  color: var(--white);
+}
+
+.split-panel p {
+  margin-bottom: 25px;
+  line-height: 1.6;
+  color: var(--white);
+}
+
+.service-part{
+  background-color: var(--blue);
+  width: 20vw;
+  height: 60dvh;
+  padding: 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+}
+
+.service-part > *{
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+.service-part a{
+  color: var(--black);
+}
+
+.contact-detail > img{
+  width: 3rem;
+  filter: invert(99%) sepia(3%) saturate(1106%) hue-rotate(182deg) brightness(101%) contrast(97%);
+}
+
+.contact-detail > *{
+  color: var(--white);
+}
+
+.contact-detail > h3, p{
+  padding: 1rem 2px 0 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .service-part {
+    width: 28vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .split-box {
+    flex-direction: column;
+  }
+
+  .split-item {
+    padding: 1.25rem 1.5rem;
+  }
+
+  .split-panel {
+    padding: 1.5rem;
+  }
+
+  .split-panel h3 {
+    font-size: 1.4rem;
+  }
+
+  .service-part {
+    width: 100%;
+  }
+}

@@ -1,0 +1,100 @@
+/*
+Theme Name: CoreITTraders
+Theme URI: https://coreittraders.com
+Author: Abd As-Sami
+Author URI: https://coreittraders.com
+Description: Core IT Traders is a Karachi-based business that buys, sells, and secures IT equipment — laptops, desktops, servers, networking gear, and CCTV systems — offering doorstep pickup/delivery, refurbished hardware at fair prices, and professional camera installation for homes and offices.
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 6.7
+Requires PHP: 8.0
+License: GNU General Public License v2 or later
+Text Domain: coreittraders
+*/
+
+/* Fonts */
+@font-face {
+  font-family: "CARDOT";
+  src: url('./assets/font/cardot.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url('./assets/font/Manrope-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root{
+    --black: #181819;
+    --white: #F4F7FB;
+    --blue: #4182C4;
+    --shadow: #D3D8DD;
+
+    --heading-font: 'CARDOT', sans-serif;
+    --paragraph-font: 'Manrope', sans-serif;
+}
+
+body{
+    background-color: var(--white);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: var(--heading-font);
+    color: var(--black);
+    font-size: 3.5rem;
+    font-weight: 400;
+}
+
+h3{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+h4{
+    font-size: 1.5rem;
+}
+
+h5{
+    font-size: 1rem;
+}
+
+p, a, span{
+    font-family: var(--paragraph-font);
+    font-weight: 200;
+    font-size: large;
+}
+
+a{
+    font-weight: 400;
+}
+
+@media (max-width: 768px) {
+    h1, h2, h3, h4 {
+        font-weight: 400;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+}

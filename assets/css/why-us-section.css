@@ -1,0 +1,38 @@
+.service-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100dvh;
+    padding: 2rem 0;
+}
+
+.service-part-details{
+    width: 80dvw;
+    display: flex;
+    justify-content: space-around;
+    padding: 4rem 0;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+    .service-part-details {
+        width: 90dvw;
+    }
+}
+
+@media (max-width: 768px) {
+    .service-section {
+        min-height: auto;
+        padding: 2rem 1rem;
+    }
+
+    .service-part-details {
+        width: 100%;
+        flex-direction: column;
+        padding: 2rem 0;
+        gap: 1.5rem;
+    }
+}

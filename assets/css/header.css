@@ -1,0 +1,110 @@
+.navbar-section{
+    background-color: var(--blue);
+    width: auto;
+    padding: 1rem 6rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar-logo > img{
+    width: 12rem;
+}
+
+.navbar-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-links > a{
+    margin: 0 1rem;
+}
+
+.service-link{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1rem;
+}
+
+.hamburger-toggle{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2rem;
+    height: 1.4rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 101;
+}
+
+.hamburger-toggle span{
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: var(--white);
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hamburger-toggle.active span:nth-child(1){
+    transform: translateY(0.55rem) rotate(45deg);
+}
+
+.hamburger-toggle.active span:nth-child(2){
+    opacity: 0;
+}
+
+.hamburger-toggle.active span:nth-child(3){
+    transform: translateY(-0.55rem) rotate(-45deg);
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+    .navbar-section {
+        padding: 1rem 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-section {
+        padding: 1rem 1.5rem;
+        position: sticky;
+    }
+
+    .hamburger-toggle{
+        display: flex;
+    }
+
+    .navbar-logo > img {
+        width: 9rem;
+    }
+
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--blue);
+        padding: 1rem 1.5rem 1.5rem 1.5rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .navbar-links > a {
+        margin: 0.5rem 0;
+        width: 100%;
+    }
+}

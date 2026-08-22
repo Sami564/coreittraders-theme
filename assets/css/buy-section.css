@@ -1,0 +1,20 @@
+/* SPLIT SECTIONS (Buy / Secure) */
+.buy-section {
+  padding: 1rem 2rem;
+}
+
+.buy-section h2 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .buy-section {
+    padding: 1rem 1.5rem;
+  }
+
+  .buy-section h2 {
+    font-size: 1.8rem;
+  }
+}
